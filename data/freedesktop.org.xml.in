@@ -5423,8 +5423,10 @@ command to generate the output files.
     <glob pattern="*.wsc"/>
   </mime-type>
   <mime-type type="application/x-x509-ca-cert">
-    <comment>DER/PEM/Netscape-encoded X.509 certificate</comment>
-    <generic-icon name="text-x-generic"/>
+    <comment>X.509 CA certificate</comment>
+    <acronym>CA</acronym>
+    <expanded-acronym>Certificate Authority</expanded-acronym>
+    <sub-class-of type="application/pkix-cert"/>
     <magic>
       <match type="string" value="-----BEGIN CA CERTIFICATE-----" offset="0"/>
       <match type="string" value="-----BEGIN TRUSTED CERTIFICATE-----" offset="0"/>
