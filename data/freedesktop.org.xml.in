@@ -317,20 +317,22 @@ command to generate the output files.
     <magic>
       <match type="string" value="-----BEGIN PKCS7-----" offset="0"/>
     </magic>
-    <generic-icon name="text-x-generic"/>
+    <glob pattern="*.der"/>
     <glob pattern="*.p7c"/>
     <glob pattern="*.p7m"/>
+    <glob pattern="*.p7z"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkcs7-signature">
     <comment>Detached S/MIME signature</comment>
     <acronym>S/MIME</acronym>
     <expanded-acronym>Secure/Multipurpose Internet Mail Extensions</expanded-acronym>
-    <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
     <magic>
       <match type="string" value="-----BEGIN PKCS7-----" offset="0"/>
     </magic>
+    <glob pattern="*.der"/>
     <glob pattern="*.p7s"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkcs8">
     <comment>PKCS#8 private key</comment>
@@ -339,7 +341,10 @@ command to generate the output files.
     <magic>
       <match type="string" value="-----BEGIN PRIVATE KEY-----" offset="0"/>
     </magic>
+    <glob pattern="*.der"/>
+    <glob pattern="*.key"/>
     <glob pattern="*.p8"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkcs8-encrypted">
     <comment>PKCS#8 private key (encrypted)</comment>
@@ -348,17 +353,21 @@ command to generate the output files.
     <magic>
       <match type="string" value="-----BEGIN ENCRYPTED PRIVATE KEY-----" offset="0"/>
     </magic>
+    <glob pattern="*.der"/>
     <glob pattern="*.p8e"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkcs10">
     <comment>PKCS#10 certification request</comment>
     <acronym>PKCS</acronym>
     <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
-    <generic-icon name="text-x-generic"/>
     <magic>
       <match type="string" value="-----BEGIN CERTIFICATE REQUEST-----" offset="0"/>
     </magic>
+    <glob pattern="*.csr"/>
+    <glob pattern="*.der"/>
     <glob pattern="*.p10"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkix-cert">
     <comment>X.509 certificate</comment>
@@ -367,6 +376,10 @@ command to generate the output files.
       <match type="string" value="-----BEGIN X509 CERTIFICATE-----" offset="0"/>
     </magic>
     <glob pattern="*.cer"/>
+    <glob pattern="*.cert"/>
+    <glob pattern="*.crt"/>
+    <glob pattern="*.der"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkix-crl">
     <comment>Certificate revocation list</comment>
@@ -374,6 +387,8 @@ command to generate the output files.
       <match type="string" value="-----BEGIN X509 CRL-----" offset="0"/>
     </magic>
     <glob pattern="*.crl"/>
+    <glob pattern="*.der"/>
+    <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/pkix-pkipath">
     <comment>PkiPath certification path</comment>
@@ -2633,7 +2648,7 @@ command to generate the output files.
       <match type="string" offset="0" value="VIC20 CARTRIDGE "/>
       <match type="string" offset="0" value="PLUS4 CARTRIDGE "/>
     </magic>
-    <glob pattern="*.crt" weight="40"/><!-- cf. application/x-x509-ca-cert -->
+    <glob pattern="*.crt" weight="30"/>
   </mime-type>
 
   <!-- Spectrum snapshots -->
@@ -4716,14 +4731,18 @@ command to generate the output files.
     <magic>
       <match type="string" value="-----BEGIN PKCS7-----" offset="0"/>
     </magic>
+    <glob pattern="*.der"/>
     <glob pattern="*.p7b"/>
+    <glob pattern="*.pem"/>
     <glob pattern="*.spc"/>
   </mime-type>
   <mime-type type="application/pkcs12">
     <comment>PKCS#12 certificate bundle</comment>
     <acronym>PKCS</acronym>
     <expanded-acronym>Public-Key Cryptography Standards</expanded-acronym>
+    <glob pattern="*.der"/>
     <glob pattern="*.p12"/>
+    <glob pattern="*.pem"/>
     <glob pattern="*.pfx"/>
     <alias type="application/x-pkcs12"/>
   </mime-type>
@@ -5449,9 +5468,10 @@ command to generate the output files.
       <match type="string" value="-----BEGIN CA CERTIFICATE-----" offset="0"/>
       <match type="string" value="-----BEGIN TRUSTED CERTIFICATE-----" offset="0"/>
     </magic>
+    <glob pattern="*.cer" weight="40"/>
+    <glob pattern="*.cert" weight="40"/>
+    <glob pattern="*.crt" weight="40"/>
     <glob pattern="*.der"/>
-    <glob pattern="*.crt"/>
-    <glob pattern="*.cert"/>
     <glob pattern="*.pem"/>
   </mime-type>
   <mime-type type="application/x-zerosize">
