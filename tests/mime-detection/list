@@ -1007,6 +1007,7 @@ bluerect.mdi image/vnd.ms-modi
 Stallman_Richard_-_The_GNU_Manifesto.fb2 application/x-fictionbook+xml
 Stallman_Richard_-_The_GNU_Manifesto.fb2.zip application/x-zip-compressed-fb2
 test.p7b application/x-pkcs7-certificates ox
+empty.cat application/vnd.ms-pki.seccat ox
 test.pkipath application/pkix-pkipath ox
 test.jks application/x-java-keystore
 test.jceks application/x-java-jce-keystore
