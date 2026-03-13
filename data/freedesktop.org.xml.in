@@ -6635,7 +6635,7 @@ command to generate the output files.
     <sub-class-of type="image/png"/>
     <magic priority="60">
       <match type="string" value="\x89PNG\r\n\x1A\n" offset="0">
-        <match type="string" value="acTL" offset="37"/>
+        <match type="string" value="acTL" offset="33:16384"/>
       </match>
     </magic>
     <glob pattern="*.apng"/>
