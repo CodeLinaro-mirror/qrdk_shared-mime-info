@@ -8917,7 +8917,7 @@ command to generate the output files.
     <generic-icon name="image-x-generic"/>
   </mime-type>
   <mime-type type="application/x-hwp">
-    <comment>Haansoft Hangul document</comment>
+    <comment>Hancom HWP document</comment>
     <generic-icon name="x-office-document"/>
     <magic>
       <match type="string" value="HWP Document File" offset="0"/>
@@ -8926,10 +8926,26 @@ command to generate the output files.
     <alias type="application/vnd.haansoft-hwp"/>
   </mime-type>
   <mime-type type="application/x-hwt">
-    <comment>Haansoft Hangul document template</comment>
+    <comment>Hancom HWP document template</comment>
     <generic-icon name="x-office-document"/>
     <glob pattern="*.hwt"/>
     <alias type="application/vnd.haansoft-hwt"/>
+  </mime-type>
+  <mime-type type="application/x-hwpx">
+    <comment>Hancom HWPX document</comment>
+    <generic-icon name="x-office-document"/>
+    <glob pattern="*.hwpx"/>
+    <sub-class-of type="application/zip"/>
+    <alias type="application/hwp+zip"/>
+    <alias type="application/vnd.hancom.hwpx"/>
+    <alias type="application/x-hwp+zip"/>
+    <magic priority="70">
+      <match type="string" value="PK\003\004" offset="0">
+        <match type="string" value="mimetype" offset="30">
+          <match type="string" offset="38" value="application/hwp+zip"/>
+        </match>
+      </match>
+    </magic>
   </mime-type>
   <mime-type type="video/x-mng">
     <comment>MNG animation</comment>

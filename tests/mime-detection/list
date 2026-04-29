@@ -286,6 +286,8 @@ appleworks.cwk application/x-appleworks-document oxo
 test.oxps application/oxps ox
 test.xps application/vnd.ms-xpsdocument ox
 ../../data/update-mime-database.1 application/x-troff-man ox
+# Created with Hancom Docs
+hancom.hwpx application/x-hwpx
 
 # Playlist, subtitle and audio formats
 stream.nsc application/x-netshow-channel
