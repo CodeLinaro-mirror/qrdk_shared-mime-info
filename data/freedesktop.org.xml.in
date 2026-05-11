@@ -1609,6 +1609,11 @@ command to generate the output files.
     </magic>
     <glob pattern="*.parquet"/>
   </mime-type>
+  <mime-type type="application/vnd.android.app-bundle">
+    <comment>Android App Bundle</comment>
+    <sub-class-of type="application/java-archive"/>
+    <glob pattern="*.aab"/>
+  </mime-type>
   <mime-type type="application/vnd.android.package-archive">
     <comment>Android package</comment>
     <sub-class-of type="application/java-archive"/>
