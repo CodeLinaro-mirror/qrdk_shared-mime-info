@@ -1067,6 +1067,9 @@ boardingpass.pkpass application/vnd.apple.pkpass
 boardingpasses.pkpasses application/vnd.apple.pkpasses
 # AppImage created by following https://appimage-builder.readthedocs.io/en/latest/intro/tutorial.html
 appimage-demo-qt5-latest-x86_64.AppImage application/vnd.appimage
+# DOS/Windows batch file
+hello.cmd application/x-bat
+hello.bat application/x-bat
 # DOS executable
 helloworld-dos.exe application/x-dosexec x
 # DOS/4G executable, compiled with `owcc -bdos4g helloworld.c -o helloworld-dos4g.exe`

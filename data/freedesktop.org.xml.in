@@ -4198,7 +4198,17 @@ command to generate the output files.
     <comment>DOS/Windows batch file</comment>
     <sub-class-of type="text/plain"/>
     <alias type="application/bat"/>
+    <alias type="application/x-msdos-program"/>
+    <alias type="text/x-msdos-batch"/>
     <generic-icon name="text-x-script"/>
+    <magic>
+      <match type="string" offset="0" value="@">
+        <match type="string" value="ECHO OFF" offset="1" mask="0x5f5f5f5fff5f5f5f"/>
+        <match type="string" value=" ECHO OFF" offset="1" mask="0xff5f5f5f5fff5f5f5f"/>
+        <match type="string" value="REM" offset="1" mask="0x5f5f5"/>
+        <match type="string" value="SET " offset="1" mask="0x5f5f5ff"/>
+      </match>
+    </magic>
     <glob pattern="*.bat"/>
     <glob pattern="*.cmd"/>
   </mime-type>
