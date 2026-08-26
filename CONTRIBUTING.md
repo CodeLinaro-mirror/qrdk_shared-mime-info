@@ -15,6 +15,14 @@ A few ground rules for people interested in adding new mime-types.
 * Mime-types used should be IANA registered mime-types when possible
 * When old mime-types become registered, the new definition should
   include an alias for the old mime-type
+* When no registered type exists, use a name that is already used in
+  practice (by the application, file(1), Apache Tika, ...), if there is one.
+  Otherwise use an `x-` prefixed name. Do not use a `vnd.` name that is not
+  registered: it looks registered, and a later registration may pick a
+  different name
+* Registering the type with IANA is welcome, anyone can do it
+  (https://www.iana.org/form/media-types). It is not required before
+  adding the type here
 
 * Magic offset must be as small as possible. For example, the worst case
   scenario for ISO images is 32k inside the file. This is too big for a sniff
