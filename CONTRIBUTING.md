@@ -15,6 +15,10 @@ A few ground rules for people interested in adding new mime-types.
 * Mime-types used should be IANA registered mime-types when possible
 * When old mime-types become registered, the new definition should
   include an alias for the old mime-type
+* When no registered type exists, use an `x-` prefixed name, unless the
+  format's community already uses another name in practice. Do not invent
+  `vnd.` names: that space belongs to the format's owner, who may register
+  a different name later
 
 * Magic offset must be as small as possible. For example, the worst case
   scenario for ISO images is 32k inside the file. This is too big for a sniff
