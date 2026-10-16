@@ -9371,7 +9371,6 @@ command to generate the output files.
     </magic>
     <glob pattern="*.ase"/>
     <glob pattern="*.aseprite"/>
-    <generic-icon name="image-x-generic"/>
   </mime-type>
   <mime-type type="application/x-hwp">
     <comment>Hancom HWP document</comment>
