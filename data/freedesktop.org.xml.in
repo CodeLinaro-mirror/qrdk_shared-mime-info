@@ -5003,7 +5003,6 @@ command to generate the output files.
   <mime-type type="text/x-reject">
     <comment>Rejected patch</comment>
     <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
     <alias type="application/x-reject"/>
     <glob pattern="*.rej"/>
   </mime-type>
@@ -5273,7 +5272,6 @@ command to generate the output files.
     <acronym>VTT</acronym>
     <expanded-acronym>Video Text Tracks</expanded-acronym>
     <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
     <magic>
       <match type="string" value="WEBVTT" offset="0"/>
     </magic>
@@ -8339,7 +8337,6 @@ command to generate the output files.
       <match type="string" value="uses" offset="0"/>
     </magic>
     <glob pattern="*.gs" case-sensitive="true"/>
-    <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="text/x-gettext-translation">
     <comment>Translation file</comment>
@@ -8898,7 +8895,6 @@ command to generate the output files.
     <expanded-acronym>Syntactically Awesome Style Sheets</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.sass"/>
-    <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="text/x-scala">
     <comment>Scala source code</comment>
@@ -8924,7 +8920,6 @@ command to generate the output files.
     <expanded-acronym>Sassy CSS</expanded-acronym>
     <sub-class-of type="text/plain"/>
     <glob pattern="*.scss"/>
-    <generic-icon name="text-x-generic"/>
   </mime-type>
   <mime-type type="text/x-setext">
     <comment>Setext document</comment>
@@ -9162,7 +9157,6 @@ command to generate the output files.
   </mime-type>
   <mime-type type="text/x-maven+xml">
     <comment>Maven description file</comment>
-    <generic-icon name="text-x-generic"/>
     <glob pattern="pom.xml"/>
     <glob pattern="settings.xml"/>
     <sub-class-of type="application/xml"/>
@@ -10056,7 +10050,6 @@ command to generate the output files.
   <mime-type type="text/x.gcode">
     <comment>G-code file</comment>
     <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
     <glob pattern="*.gcode"/>
   </mime-type>
 
@@ -10487,7 +10480,6 @@ command to generate the output files.
     <acronym>NSIS</acronym>
     <expanded-acronym>Nullsoft Scriptable Install System</expanded-acronym>
     <sub-class-of type="text/plain"/>
-    <generic-icon name="text-x-generic"/>
     <glob pattern="*.nsi"/>
     <glob pattern="*.nsh"/>
   </mime-type>
