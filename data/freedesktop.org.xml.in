@@ -3027,7 +3027,6 @@ command to generate the output files.
     <comment>WOFF font</comment>
     <acronym>WOFF</acronym>
     <expanded-acronym>Web Open Font Format</expanded-acronym>
-    <generic-icon name="font-x-generic"/>
     <magic>
       <match type="big32" value="0x774f4646" offset="0"/>
     </magic>
@@ -3038,7 +3037,6 @@ command to generate the output files.
     <comment>WOFF2 font</comment>
     <acronym>WOFF2</acronym>
     <expanded-acronym>Web Open Font Format 2.0</expanded-acronym>
-    <generic-icon name="font-x-generic"/>
     <magic>
       <match type="big32" value="0x774f4632" offset="0"/>
     </magic>
@@ -3147,7 +3145,6 @@ command to generate the output files.
   <mime-type type="font/otf">
     <comment>OpenType font</comment>
     <sub-class-of type="font/ttf"/>
-    <generic-icon name="font-x-generic"/>
     <magic>
       <match type="string" value="OTTO" offset="0"/>
     </magic>
@@ -3202,7 +3199,6 @@ command to generate the output files.
   </mime-type>
   <mime-type type="font/ttf">
     <comment>TrueType font</comment>
-    <generic-icon name="font-x-generic"/>
     <magic>
       <match type="string" value="FFIL" offset="0"/>
       <match type="string" value="FFIL" offset="65"/>
@@ -3213,7 +3209,6 @@ command to generate the output files.
   </mime-type>
   <mime-type type="font/collection">
     <comment>Font collection</comment>
-    <generic-icon name="font-x-generic"/>
     <glob pattern="*.ttc"/>
   </mime-type>
   <mime-type type="application/x-font-ttx">
