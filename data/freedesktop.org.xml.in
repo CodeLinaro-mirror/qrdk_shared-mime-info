@@ -553,7 +553,6 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-flv">
     <comment>Flash video</comment>
-    <generic-icon name="video-x-generic"/>
     <magic>
       <match type="string" value="FLV" offset="0"/>
     </magic>
@@ -564,7 +563,6 @@ command to generate the output files.
   </mime-type>
   <mime-type type="video/x-javafx">
     <comment>JavaFX video</comment>
-    <generic-icon name="video-x-generic"/>
     <magic priority="40">
       <match type="string" value="FLV" offset="0"/>
     </magic>
@@ -1758,7 +1756,6 @@ command to generate the output files.
   <mime-type type="video/vnd.youtube.yt">
     <comment>YouTube media archive</comment>
     <alias type="application/vnd.youtube.yt"/>
-    <generic-icon name="video-x-generic"/>
     <magic>
       <match type="string" value="ftypyt4 " offset="4"/>
     </magic>
