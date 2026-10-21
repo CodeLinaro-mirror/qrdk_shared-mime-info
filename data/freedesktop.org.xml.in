@@ -488,6 +488,19 @@ command to generate the output files.
     <sub-class-of type="application/json"/>
     <glob pattern="*.spdx.json"/>
   </mime-type>
+  <mime-type type="application/x-cdf">
+    <comment>Audio CD track information</comment>
+    <acronym>CD</acronym>
+    <expanded-acronym>Compact Disc</expanded-acronym>
+    <sub-class-of type="application/x-riff"/>
+    <generic-icon name="audio-x-generic"/>
+    <magic>
+      <match type="string" value="RIFF$\0\0\0CDDAfmt " offset="0"/>
+    </magic>
+    <glob pattern="*.cda"/>
+    <alias type="application/x-cda"/>
+    <alias type="audio/x-cda"/>
+  </mime-type>
   <mime-type type="application/vnd.ms-wpl">
     <comment>WPL playlist</comment>
     <acronym>WPL</acronym>
