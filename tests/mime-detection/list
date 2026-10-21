@@ -1331,6 +1331,13 @@ empty.parquet application/vnd.apache.parquet
 
 1EO8.pdb chemical/x-pdb
 
+# First 30 lines of https://ftp.ensembl.org/pub/release-116/gff3/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.63.gff3.gz
+Caenorhabditis_elegans.WBcel235.63.gff3 text/gff3
+# First 30 lines of https://ftp.ncbi.nlm.nih.gov/genomes/refseq/invertebrate/Caenorhabditis_elegans/reference/GCF_000002985.6_WBcel235/GCF_000002985.6_WBcel235_genomic.gff.gz
+GCF_000002985.6_WBcel235_genomic.gff text/gff3
+# First 30 lines of https://pave.niaid.nih.gov/locus_viewer?seq_id=RfPV1REF
+RfPV1REF.gff text/gff3
+
 # Org-mode file
 test.org text/org ox
 # OpenZIM file
