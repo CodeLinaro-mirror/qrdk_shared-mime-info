@@ -626,7 +626,7 @@ The text/x-diff above example would (on its own) create this magic file:
 ]]></programlisting>
 		</para>
 		<para>
-The <sgmltag class="attribute">magic-deleteall</sgmltag> attribute, which means that implementations
+The <sgmltag class="element">magic-deleteall</sgmltag> element, which means that implementations
 SHOULD discard information from previous directories, is written out into the magic file using
 __NOMAGIC__ as the value:
 <screen>>0=__NOMAGIC__\n</screen>
