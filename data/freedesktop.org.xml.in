@@ -3421,6 +3421,19 @@ command to generate the output files.
     </magic>
     <glob pattern="*.gnumeric"/>
   </mime-type>
+  <mime-type type="application/x-gnupg-private-key">
+    <comment>GnuPG private key</comment>
+    <!-- gpg-agent key files, in private-keys-v1.d -->
+    <magic>
+      <match type="string" value="(11:private-key(" offset="0"/>
+      <match type="string" value="(21:protected-private-key(" offset="0"/>
+      <match type="string" value="(20:shadowed-private-key(" offset="0"/>
+      <match type="string" value="Key: (private-key " offset="0:1024"/>
+      <match type="string" value="Key: (protected-private-key " offset="0:1024"/>
+      <match type="string" value="Key: (shadowed-private-key " offset="0:1024"/>
+    </magic>
+    <glob pattern="*.key" weight="10"/>
+  </mime-type>
   <mime-type type="application/x-gnuplot">
     <comment>Gnuplot document</comment>
     <sub-class-of type="text/plain"/>

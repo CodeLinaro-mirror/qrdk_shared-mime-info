@@ -1243,6 +1243,9 @@ test-secret-key.asc application/pgp-keys xoo
 # not all *.key should be detected as Apple Keynote
 test-secret.key application/pgp-keys x
 test-garbage.key application/octet-stream xox
+# gpg-agent private keys, from private-keys-v1.d
+test-gpg-agent.key application/x-gnupg-private-key x
+test-gpg-agent-canonical.key application/x-gnupg-private-key x
 
 # copied from https://bitbucket.org/scons/scons/raw/f0d4664d36f8a4d4da53178cf947c86c86db3cb7/SConstruct
 SConstruct text/x-scons oxo
