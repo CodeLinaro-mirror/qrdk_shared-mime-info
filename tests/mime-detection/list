@@ -440,9 +440,14 @@ survey.jse text/jscript.encode
 Utils.jsm text/javascript ox
 esm.mjs text/javascript ox
 javascript-without-extension text/javascript xoo
+# Copied from https://github.com/GermaVinsmoke/bmi-calculator/blob/master/src/components/Info/Info.jsx
+Info.jsx text/jsx ox
 # Copied from https://github.com/microsoft/TypeScript-Website/blob/v2/packages/documentation/copy/en/get-started/TS%20for%20JS%20Programmers.md
 UserAccount.ts application/typescript x
 UserAccount.cts application/typescript
+# Copied from https://github.com/microsoft/TypeScript-Website/blob/v2/packages/typescriptlang-org/src/components/index/twoslash/react.tsx
+react.tsx text/tsx ox
+react2.tsx text/tsx ox
 # The following two copied from RFC 4627.
 json_object.json application/json ox
 json_array.json application/json ox
@@ -1352,7 +1357,7 @@ test.srx application/sparql-results+xml ox
 
 # Tiled files
 tiledsample/tiled_sample.tmx application/x-tiled-tmx ox
-tiledsample/tiled_sample.tsx application/x-tiled-tsx ox
+tiledsample/tiled_sample.tsx application/x-tiled-tsx x
 
 # Modrinth Modpack
 test.mrpack application/x-modrinth-modpack+zip ox
