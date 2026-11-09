@@ -317,6 +317,8 @@ ocf10-20060911.epub application/epub+zip
 elizabeth-barrett-browning_sonnets-from-the-portuguese.azw3 application/vnd.amazon.mobi8-ebook ox
 # Created with BBeBinder
 blank.lrf application/x-sony-bbeb x
+# Created with Windows 3.1
+blank.wri application/x-mswrite
 # Copied from http://libwps.svn.sourceforge.net/viewvc/libwps/trunk/reference/
 test.wps application/vnd.ms-works
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=45922

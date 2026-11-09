@@ -4475,8 +4475,14 @@ command to generate the output files.
     <glob pattern="*.url"/>
   </mime-type>
   <mime-type type="application/x-mswrite">
-    <comment>WRI document</comment>
+    <comment>Microsoft Write document</comment>
     <generic-icon name="x-office-document"/>
+    <magic priority="40"><!-- less than application/msword -->
+      <match type="string" value="\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00" offset="2">
+        <match type="little16" value="0137061" offset="0"/><!-- without OLE objects -->
+        <match type="little16" value="0137062" offset="0"/><!-- with OLE objects -->
+      </match>
+    </magic>
     <glob pattern="*.wri"/>
   </mime-type>
   <mime-type type="application/x-msx-rom">
