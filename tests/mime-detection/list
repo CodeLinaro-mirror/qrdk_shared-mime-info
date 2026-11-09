@@ -302,6 +302,10 @@ cdr171.cdr application/x-vnd.corel.zcf.draw.document+zip x
 quattro6.wb2 application/x-quattropro ox
 # Created with Quattro Pro 9
 quattro9.qpw application/x-quattropro
+# Created with Microsoft Word 3.1 for DOS
+dosword31.doc application/msword
+# Created with Microsoft Word 5.5 for DOS
+dosword55.doc application/msword
 # Copied from https://bugs.freedesktop.org/show_bug.cgi?id=20604
 foo.doc application/msword
 # Copied from http://bugzilla.abisource.com/show_bug.cgi?id=6435
