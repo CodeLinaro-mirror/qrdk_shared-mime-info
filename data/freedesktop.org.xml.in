@@ -669,8 +669,23 @@ command to generate the output files.
   <mime-type type="application/vnd.corel-draw">
     <comment>Corel Draw drawing</comment>
     <generic-icon name="image-x-generic"/>
-    <magic priority="80">
-      <match type="string" value="CDRXvrsn" mask="0xffffff00ffffffff" offset="8"/>
+    <magic>
+      <!-- 1.2 and 2.0 -->
+      <match type="string" value="WL\0\0" mask="0xffff00ff" offset="0"/>
+      <!-- 3.0 through 13.0, including 7.3 without compression -->
+      <match type="string" value="RIFF" offset="0">
+        <match type="string" value="vrsn" offset="12">
+          <match type="string" value="CDR" offset="8"/>
+          <match type="string" value="cdr" offset="8"/><!-- 8.0 Bidi -->
+        </match>
+      </match>
+      <!-- 7.3 with compression -->
+      <match type="string" value="LIST" offset="0">
+        <!-- bitmap compression and graphic object compression (the default) -->
+        <match type="string" value="cmpr" offset="8"/>
+        <!-- bitmap compression only -->
+        <match type="string" value="doc mcfg" offset="8"/>
+      </match>
     </magic>
     <glob pattern="*.cdr"/>
     <alias type="application/cdr"/>

@@ -258,6 +258,38 @@ compound.wpd application/vnd.wordperfect
 pl30.pln application/x-planperfect
 # Created with PlanPerfect 5.1
 pl51.pln application/x-planperfect
+# Created with CorelDRAW 1.21B, truncated to 512 bytes
+cdr12.cdr application/vnd.corel-draw
+# Created with CorelDRAW 2.0 Rev B, truncated to 512 bytes
+cdr20.cdr application/vnd.corel-draw
+# Created with CorelDRAW 3.00 Rev B
+cdr30.cdr application/vnd.corel-draw
+# Created with CorelDRAW 4.00.B3
+cdr40.cdr application/vnd.corel-draw
+# Created with CorelDRAW 5.00.F2, truncated to 512 bytes
+cdr50.cdr application/vnd.corel-draw
+# Created with CorelDRAW 6.00.112, truncated to 512 bytes
+cdr60.cdr application/vnd.corel-draw
+# Created with CorelDRAW 7.373, saved without compression, truncated to 512 bytes
+cdr73-0.cdr application/vnd.corel-draw
+# Created with CorelDRAW 7.373, saved with bitmap compression only, truncated to 512 bytes
+cdr73-1.cdr application/vnd.corel-draw
+# Created with CorelDRAW 7.373, saved with graphic object compression only, truncated to 512 bytes
+cdr73-2.cdr application/vnd.corel-draw
+# Created with CorelDRAW 7.373, saved with both bitmap compression and graphic object compression (the default), truncated to 512 bytes
+cdr73-3.cdr application/vnd.corel-draw
+# Created with CorelDRAW 8.369, truncated to 512 bytes
+cdr83.cdr application/vnd.corel-draw
+# Created with CorelDRAW 9.337, truncated to 512 bytes
+cdr93.cdr application/vnd.corel-draw
+# Created with CorelDRAW 10.410, truncated to 512 bytes
+cdr104.cdr application/vnd.corel-draw
+# Created with CorelDRAW 11.633, truncated to 512 bytes
+cdr116.cdr application/vnd.corel-draw
+# Created with CorelDRAW 12.0.0.458, truncated to 512 bytes
+cdr120.cdr application/vnd.corel-draw
+# Created with CorelDRAW 13.0.0.576, truncated to 512 bytes
+cdr130.cdr application/vnd.corel-draw
 # Created with Quattro Pro 6
 quattro6.wb2 application/x-quattropro ox
 # Created with Quattro Pro 9
